@@ -20,7 +20,8 @@ def third():
             "И начнем с Марса!<br>"
             "Присоединяйся!")
 
-@app.route('image_mars')
+
+@app.route('/image_mars')
 def images():
     return f"""<!doctype html>
                     <html lang="en">
@@ -30,7 +31,7 @@ def images():
                       </head>
                       <body>
                         <h1>Жди нас, Марс!</h1>
-                        <img src="{url_for('static', filename='image_mars.png')}" alt="">
+                        <img src="{url_for('static', filename='image.png')}" alt="">
                         <p>Вот она какая, красная планета.</p>
                       </body>
                     </html>"""
